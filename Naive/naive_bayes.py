@@ -6,7 +6,7 @@ from jcopml.pipeline import num_pipe, cat_pipe
 from jcopml.plot import plot_confusion_matrix
 
 
-data = pd.read_csv('data.csv');
+data = pd.read_csv('D:\\kuliah\\Naive\\data.csv');
 
 data_awal = data.drop(columns="Play")
 data_label = data.Play
@@ -40,10 +40,15 @@ pipeline = Pipeline([
 
 pipeline.fit(data_awal_train, data_label_train)
 
-print("Performa traning: ", pipeline.score(data_awal_train, data_label_train))
+print("\nTraining Data:")
+print(data_awal_train.head())
+print("\nTest Data:")
+print(data_awal_test.head())
+
+print("\nPerforma traning: ", pipeline.score(data_awal_train, data_label_train))
 print("Performa test: ", pipeline.score(data_awal_test, data_label_test))
 
 # evaluasi model
-print(plot_confusion_matrix(data_awal_train, data_label_train, data_awal_test, data_label_test, pipeline))
-
-print(data_awal_test)
+plot_confusion_matrix(data_awal_train, data_label_train, data_awal_test, data_label_test, pipeline)
+import matplotlib.pyplot as plt
+plt.show()  # Add this to display the confusion matrix plot
