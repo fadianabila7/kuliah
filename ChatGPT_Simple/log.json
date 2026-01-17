@@ -1,0 +1,131 @@
+[
+    {
+        "preprocessed_question": [
+            "saya",
+            "tidak",
+            "bisa",
+            "mengisi",
+            "krs"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 2.0794415416798357
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "Mahasiswa yang tidak mengisi KRS tidak dapat mengikuti perkuliahan dan tidak terdaftar sebagai peserta mata kuliah.",
+        "datetime": "2026-01-17 09:15:31"
+    }
+]
