@@ -1,6 +1,8 @@
 <?php
-class TextProcessor {
-    public static function preprocessText($text) {
+class TextProcessor
+{
+    public static function preprocessText($text)
+    {
         // Ubah ke huruf kecil
         $text = strtolower($text);
         // Hilangkan tanda baca
@@ -10,7 +12,8 @@ class TextProcessor {
         return $tokens;
     }
 
-    public static function calculateTFIDF($userTokens, $dbQuestion) {
+    public static function calculateTFIDF($userTokens, $dbQuestion)
+    {
         $dbTokens = self::preprocessText($dbQuestion);
         $allTokens = array_unique(array_merge($userTokens, $dbTokens));
 
@@ -40,4 +43,3 @@ class TextProcessor {
         return $tfidf;
     }
 }
-?>

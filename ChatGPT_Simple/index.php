@@ -46,10 +46,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_SESSION['user_id'])) {
 $greetings = ["selamat siang", "selamat sore", "hallo", "halo", "hai"];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id']) && isset($_POST['question'])) {
+<<<<<<< HEAD
     $user_id = $_SESSION['user_id'];
     $question = $conn->real_escape_string($_POST['question']);
     $userTokens = TextProcessor::preprocessText($question);
 
+=======
+
+    $datetime = date('Y-m-d H:i:s');
+
+    $user_id = $_SESSION['user_id'];
+    $question = $conn->real_escape_string($_POST['question']);
+    $userTokens = TextProcessor::preprocessText($question);
+    $log['preprocessed_question'] = $userTokens;
+>>>>>>> b6bb97e6cd85d9dd4fafcd8ec44bbb231f7acbb6
     // Validasi input untuk menangani pertanyaan kosong atau sapaan
     $question = trim($_POST['question']);
     if (empty($question)) {
@@ -64,6 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id']) && isse
         $bestMatch = null;
         $highestScore = 0;
 
+
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 $score = TextProcessor::calculateTFIDF($userTokens, $row['question']);
@@ -74,25 +85,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id']) && isse
             }
         }
 
+<<<<<<< HEAD
+=======
+        $log['tfidf_scores'] = $tfidfScores;
+>>>>>>> b6bb97e6cd85d9dd4fafcd8ec44bbb231f7acbb6
         if ($highestScore > 0) {
             $response = $bestMatch;
         } else {
             $response = "Maaf, saya tidak tahu jawabannya. Coba tanyakan yang lain.";
         }
+<<<<<<< HEAD
     }
     // Simpan ke database
     $datetime = date('Y-m-d H:i:s');
+=======
+        // Simpan respons ke log
+        $log['response'] = $response;
+        $log['datetime'] = $datetime;
+    }
+    // Simpan ke database
+>>>>>>> b6bb97e6cd85d9dd4fafcd8ec44bbb231f7acbb6
     $sql = "INSERT INTO chat_history (user_id, question, answer, created_at) VALUES ('$user_id', '$question', '$response', '$datetime')";
     if (!$conn->query($sql)) {
         die("Gagal menyimpan riwayat chat: " . $conn->error);
     }
+<<<<<<< HEAD
+=======
+    // Simpan log ke file log.json tanpa menghentikan eksekusi
+    $logFile = 'log.json';
+    $existingLogs = file_exists($logFile) ? json_decode(file_get_contents($logFile), true) : [];
+    $existingLogs[] = $log;
+    file_put_contents($logFile, json_encode($existingLogs, JSON_PRETTY_PRINT));
+>>>>>>> b6bb97e6cd85d9dd4fafcd8ec44bbb231f7acbb6
 }
 
 // Ambil 5 pertanyaan terakhir dari database
 $chatHistory = [];
 if (isset($_SESSION['user_id'])) {
     $user_id = $_SESSION['user_id'];
+<<<<<<< HEAD
     $sql = "SELECT question, answer, created_at FROM chat_history WHERE user_id = '$user_id' ORDER BY created_at ASC LIMIT 5";
+=======
+    $sql = "SELECT question, answer, created_at FROM chat_history WHERE user_id = '$user_id' ORDER BY created_at ASC";
+>>>>>>> b6bb97e6cd85d9dd4fafcd8ec44bbb231f7acbb6
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {

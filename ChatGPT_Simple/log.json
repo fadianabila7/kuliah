@@ -1,9 +1,398 @@
 [
     {
         "preprocessed_question": [
-            "saya",
-            "tidak",
-            "bisa",
+            "hallo"
+        ]
+    },
+    {
+        "preprocessed_question": [
+            "apakah",
+            "krs",
+            "harus",
+            "disetujui",
+            "dosen"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 3.4657359027997265
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "Ya, KRS harus mendapatkan persetujuan dari dosen pembimbing akademik agar dinyatakan sah.",
+        "datetime": "2026-01-19 12:17:46"
+    },
+    {
+        "preprocessed_question": [
+            "krs",
+            "harus",
+            "disetujui"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 2.0794415416798357
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "Ya, KRS harus mendapatkan persetujuan dari dosen pembimbing akademik agar dinyatakan sah.",
+        "datetime": "2026-01-19 12:18:07"
+    },
+    {
+        "preprocessed_question": [
+            "bagaimana",
+            "dengan",
+            "syarat",
+            "pengisian",
+            "krs"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 2.0794415416798357
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "Syarat pengisian KRS meliputi status mahasiswa aktif, pembayaran UKT, dan persetujuan dosen pembimbing akademik.",
+        "datetime": "2026-01-19 12:27:30"
+    },
+    {
+        "preprocessed_question": [
+            "kapan",
+            "mahasiswa",
             "mengisi",
             "krs"
         ],
@@ -94,6 +483,760 @@
             },
             {
                 "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 2.0794415416798357
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "Mahasiswa mengisi KRS melalui sistem akademik online kampus seperti https:\/\/krsti.sar.ac.id atau portal akademik.",
+        "datetime": "2026-01-19 12:28:13"
+    },
+    {
+        "preprocessed_question": [
+            "krs"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "KRS adalah Kartu Rencana Studi yang digunakan mahasiswa untuk memilih mata kuliah setiap semester.",
+        "datetime": "2026-01-19 12:29:14"
+    },
+    {
+        "preprocessed_question": [
+            "krs"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "KRS adalah Kartu Rencana Studi yang digunakan mahasiswa untuk memilih mata kuliah setiap semester.",
+        "datetime": "2026-01-19 12:29:18"
+    },
+    {
+        "preprocessed_question": [
+            "krs",
+            "mahasiswa"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "Mahasiswa mengisi KRS melalui sistem akademik online kampus seperti https:\/\/krsti.sar.ac.id atau portal akademik.",
+        "datetime": "2026-01-19 12:29:24"
+    },
+    {
+        "preprocessed_question": [
+            "krs",
+            "mahasiswa"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "Mahasiswa mengisi KRS melalui sistem akademik online kampus seperti https:\/\/krsti.sar.ac.id atau portal akademik.",
+        "datetime": "2026-01-19 12:29:41"
+    },
+    {
+        "preprocessed_question": [
+            "krs",
+            "mahasiswa"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "Mahasiswa mengisi KRS melalui sistem akademik online kampus seperti https:\/\/krsti.sar.ac.id atau portal akademik.",
+        "datetime": "2026-01-19 12:35:04"
+    },
+    {
+        "preprocessed_question": [
+            "mengisi",
+            "krs"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
                 "tfidf_score": 1.3862943611198906
             },
             {
@@ -110,11 +1253,11 @@
             },
             {
                 "db_question": "Apakah KRS bisa diubah setelah disubmit?",
-                "tfidf_score": 1.3862943611198906
+                "tfidf_score": 0.6931471805599453
             },
             {
                 "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
-                "tfidf_score": 2.0794415416798357
+                "tfidf_score": 1.3862943611198906
             },
             {
                 "db_question": "Apakah KRS harus disetujui dosen?",
@@ -125,7 +1268,134 @@
                 "tfidf_score": 0.6931471805599453
             }
         ],
-        "response": "Mahasiswa yang tidak mengisi KRS tidak dapat mengikuti perkuliahan dan tidak terdaftar sebagai peserta mata kuliah.",
-        "datetime": "2026-01-17 09:15:31"
+        "response": "Mahasiswa mengisi KRS melalui sistem akademik online kampus seperti https:\/\/krsti.sar.ac.id atau portal akademik.",
+        "datetime": "2026-01-19 12:35:36"
+    },
+    {
+        "preprocessed_question": [
+            "apa",
+            "itu",
+            "uas"
+        ],
+        "tfidf_scores": [
+            {
+                "db_question": "Apa itu Information Retrieval?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa manfaat Information Retrieval?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa contoh penerapan Information Retrieval?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu TF-IDF?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu Term Frequency?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu Document Frequency?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu Cosine Similarity?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu KRS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu KHS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu IPK?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu SKS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu UTS?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu UAS?",
+                "tfidf_score": 2.0794415416798357
+            },
+            {
+                "db_question": "Apa itu skripsi?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa perbedaan skripsi dan tesis?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apa itu jurnal ilmiah?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu sitasi?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu plagiarism?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu referensi?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Apa itu proposal skripsi?",
+                "tfidf_score": 1.3862943611198906
+            },
+            {
+                "db_question": "Kapan KRS bisa diambil?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Di mana mahasiswa mengisi KRS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Siapa yang berhak mengisi KRS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa saja syarat pengisian KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Berapa jumlah SKS yang dapat diambil dalam KRS?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apakah KRS bisa diubah setelah disubmit?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa yang terjadi jika tidak mengisi KRS?",
+                "tfidf_score": 0.6931471805599453
+            },
+            {
+                "db_question": "Apakah KRS harus disetujui dosen?",
+                "tfidf_score": 0
+            },
+            {
+                "db_question": "Apa perbedaan KRS dan KHS?",
+                "tfidf_score": 0.6931471805599453
+            }
+        ],
+        "response": "UAS adalah Ujian Akhir Semester yang dilaksanakan di akhir masa perkuliahan.",
+        "datetime": "2026-01-19 12:36:55"
     }
 ]
