@@ -3,7 +3,6 @@
 require_once 'db_connection.php';
 require_once 'TextProcessor.php';
 
-
 // Tambahkan riwayat chat
 session_start();
 if (!isset($_SESSION['chat_history'])) {
@@ -18,6 +17,16 @@ $log = [];
 // Tambahkan logging ke file log.json
 $logFile = 'log.json';
 
+// Pastikan session hanya menyimpan NIM dan nama
+if (!isset($_SESSION['user_id'])) {
+    echo '<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = new bootstrap.Modal(document.getElementById("userModal"));
+            modal.show();
+        });
+    </script>';
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_SESSION['user_id'])) {
     $nim = $conn->real_escape_string($_POST['nim']);
     $nama = $conn->real_escape_string($_POST['nama']);
@@ -26,24 +35,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !isset($_SESSION['user_id'])) {
     $sql = "INSERT INTO users (nim, nama) VALUES ('$nim', '$nama')";
     if ($conn->query($sql)) {
         $_SESSION['user_id'] = $conn->insert_id;
+        $_SESSION['nim'] = $nim;
+        $_SESSION['nama'] = $nama;
     } else {
         die("Gagal menyimpan data mahasiswa: " . $conn->error);
     }
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id'])) {
+// Tambahkan daftar sapaan
+$greetings = ["selamat siang", "selamat sore", "hallo", "halo", "hai"];
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id']) && isset($_POST['question'])) {
     $user_id = $_SESSION['user_id'];
     $question = $conn->real_escape_string($_POST['question']);
     $userTokens = TextProcessor::preprocessText($question);
 
-    // Simpan hasil preprocessText ke log
-    $log['preprocessed_question'] = $userTokens;
-
-    // Validasi input untuk menangani pertanyaan kosong atau tidak relevan
+    // Validasi input untuk menangani pertanyaan kosong atau sapaan
     $question = trim($_POST['question']);
     if (empty($question)) {
         $response = "Pertanyaan tidak boleh kosong. Silakan masukkan pertanyaan yang valid.";
-        $log['response'] = $response;
+    } elseif (in_array(strtolower($question), $greetings)) {
+        $response = "Apa yang bisa saya bantu?";
     } else {
         // Ambil semua pertanyaan dari database
         $sql = "SELECT question, answer FROM qa";
@@ -51,15 +63,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id'])) {
 
         $bestMatch = null;
         $highestScore = 0;
-        $tfidfScores = [];
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 $score = TextProcessor::calculateTFIDF($userTokens, $row['question']);
-                $tfidfScores[] = [
-                    'db_question' => $row['question'],
-                    'tfidf_score' => $score
-                ];
                 if ($score > $highestScore) {
                     $highestScore = $score;
                     $bestMatch = $row['answer'];
@@ -67,49 +74,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id'])) {
             }
         }
 
-        // Simpan hasil TF-IDF ke log
-        $log['tfidf_scores'] = $tfidfScores;
-
         if ($highestScore > 0) {
             $response = $bestMatch;
         } else {
             $response = "Maaf, saya tidak tahu jawabannya. Coba tanyakan yang lain.";
         }
-
-        // Simpan ke database
-        $datetime = date('Y-m-d H:i:s');
-        $sql = "INSERT INTO chat_history (user_id, question, answer, created_at) VALUES ('$user_id', '$question', '$response', '$datetime')";
-        if (!$conn->query($sql)) {
-            die("Gagal menyimpan riwayat chat: " . $conn->error);
-        }
-
-        // Simpan ke session dengan waktu
-        $_SESSION['chat_history'][] = [
-            'question' => $question,
-            'answer' => $response,
-            'time' => $datetime
-        ];
-
-        // Simpan respons ke log
-        $log['response'] = $response;
-        $log['datetime'] = $datetime;
     }
-
-    // Simpan log ke file log.json tanpa menghentikan eksekusi
-    $logFile = 'log.json';
-    $existingLogs = file_exists($logFile) ? json_decode(file_get_contents($logFile), true) : [];
-    $existingLogs[] = $log;
-    file_put_contents($logFile, json_encode($existingLogs, JSON_PRETTY_PRINT));
+    // Simpan ke database
+    $datetime = date('Y-m-d H:i:s');
+    $sql = "INSERT INTO chat_history (user_id, question, answer, created_at) VALUES ('$user_id', '$question', '$response', '$datetime')";
+    if (!$conn->query($sql)) {
+        die("Gagal menyimpan riwayat chat: " . $conn->error);
+    }
 }
 
-// Personalisasi respons dengan menyapa pengguna
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $response = "Halo! " . $response;
+// Ambil 5 pertanyaan terakhir dari database
+$chatHistory = [];
+if (isset($_SESSION['user_id'])) {
+    $user_id = $_SESSION['user_id'];
+    $sql = "SELECT question, answer, created_at FROM chat_history WHERE user_id = '$user_id' ORDER BY created_at ASC LIMIT 5";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $chatHistory[] = $row;
+        }
+    }
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -119,22 +114,47 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Tambahkan CSS Eksternal -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Modal untuk memasukkan NIM dan Nama -->
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="userModalLabel">Masukkan Data Mahasiswa</h5>
+                </div>
+                <form method="POST">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="nim" class="form-label">NIM</label>
+                            <input type="text" class="form-control" id="nim" name="nim" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="nama" name="nama" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="chat-container">
         <div class="chat-header">
             <h4>ChatGPT Sederhana</h4>
         </div>
         <div class="chat-body">
-            <?php if (!empty($_SESSION['chat_history'])): ?>
-                <?php foreach ($_SESSION['chat_history'] as $chat): ?>
-                    <div class="chat-bubble user">
-                        <p><?php echo htmlspecialchars($chat['question']); ?></p>
-                    </div>
-                    <div class="chat-bubble bot">
-                        <p><?php echo htmlspecialchars($chat['answer']); ?></p>
-                    </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
+            <?php foreach ($chatHistory as $chat): ?>
+                <div class="chat-bubble user">
+                    <p><strong>[<?php echo $chat['created_at']; ?>]</strong> <?php echo htmlspecialchars($chat['question']); ?></p>
+                </div>
+                <div class="chat-bubble bot">
+                    <p><?php echo htmlspecialchars($chat['answer']); ?></p>
+                </div>
+            <?php endforeach; ?>
         </div>
         <div class="chat-footer">
             <form method="POST" class="d-flex">
@@ -153,4 +173,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         });
     </script>
 </body>
+
 </html>
