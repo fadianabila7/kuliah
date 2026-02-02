@@ -66,16 +66,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_SESSION['user_id']) && isse
 
         $bestMatch = null;
         $highestScore = 0;
-        $tfidfScores = [];
 
 
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 $score = TextProcessor::calculateTFIDF($userTokens, $row['question']);
-                $tfidfScores[] = [
-                    'db_question' => $row['question'],
-                    'tfidf_score' => $score
-                ];
                 if ($score > $highestScore) {
                     $highestScore = $score;
                     $bestMatch = $row['answer'];
